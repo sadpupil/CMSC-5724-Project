@@ -12,8 +12,8 @@ public class ResultVerify {
         VectorOp tool = new VectorOp();
         int len = dataSet.size();
         double margin = Double.MAX_VALUE;
-        for(int i = 0; i < len; i++) {
-            double[] p = dataSet.get(i).getCoordinate();
+        for (DataInstance dataInstance : dataSet) {
+            double[] p = dataInstance.getCoordinate();
             double tmp = Math.abs(tool.vectorDotProduct(p, w)) / tool.vectorMagnitude(w);
             margin = Math.min(tmp, margin);
         }
@@ -24,12 +24,11 @@ public class ResultVerify {
         VectorOp tool = new VectorOp();
         int len = dataSet.size(), n = dataSet.get(0).getNumOfInstance();
         int wrong = 0;
-        for(int i = 0; i < len; i++) {
-            DataInstance tmp = dataSet.get(i);
+        for (DataInstance tmp : dataSet) {
             double[] p = tmp.getCoordinate();
             int l = tmp.getLabel();
             double dotProduct = tool.vectorDotProduct(p, w);
-            if((l == 1 && dotProduct <= 0) || (l == -1 && dotProduct >= 0)) {
+            if ((l == 1 && dotProduct <= 0) || (l == -1 && dotProduct >= 0)) {
                 wrong++;
             }
         }

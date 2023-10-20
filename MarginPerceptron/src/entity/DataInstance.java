@@ -2,12 +2,11 @@ package entity;
 
 public class DataInstance {
 
-    private double[] coordinate;
-    private int label;
-
-    private double radius;
-    private int dimension;
-    private int numOfInstance;
+    private final double[] coordinate;
+    private final int label;
+    private final double radius;
+    private final int dimension;
+    private final int numOfInstance;
 
     public DataInstance(double[] coordinate, int label, double radius, int dimension, int numOfInstance) {
         this.coordinate = coordinate;
