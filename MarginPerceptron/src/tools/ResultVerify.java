@@ -10,7 +10,6 @@ public class ResultVerify {
 
     public double getMargin(ArrayList<DataInstance> dataSet, double[] w) {
         VectorOp tool = new VectorOp();
-        int len = dataSet.size();
         double margin = Double.MAX_VALUE;
         for (DataInstance dataInstance : dataSet) {
             double[] p = dataInstance.getCoordinate();
@@ -22,7 +21,7 @@ public class ResultVerify {
 
     public double getEmpiricalError(ArrayList<DataInstance> dataSet, double[] w) {
         VectorOp tool = new VectorOp();
-        int len = dataSet.size(), n = dataSet.get(0).getNumOfInstance();
+        int n = dataSet.get(0).getNumOfInstance();
         int wrong = 0;
         for (DataInstance tmp : dataSet) {
             double[] p = tmp.getCoordinate();
