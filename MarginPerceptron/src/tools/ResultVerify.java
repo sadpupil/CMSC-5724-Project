@@ -1,4 +1,4 @@
-package helper;
+package tools;
 
 import entity.DataInstance;
 
@@ -23,17 +23,17 @@ public class ResultVerify {
     public double getEmpiricalError(ArrayList<DataInstance> dataSet, double[] w) {
         VectorOp tool = new VectorOp();
         int len = dataSet.size(), n = dataSet.get(0).getNumOfInstance();
-        int correct = 0;
+        int wrong = 0;
         for(int i = 0; i < len; i++) {
             DataInstance tmp = dataSet.get(i);
             double[] p = tmp.getCoordinate();
             int l = tmp.getLabel();
             double dotProduct = tool.vectorDotProduct(p, w);
-            if((l == 1 && dotProduct > 0) || (l == -1 && dotProduct < 0)) {
-                correct++;
+            if((l == 1 && dotProduct <= 0) || (l == -1 && dotProduct >= 0)) {
+                wrong++;
             }
         }
-        return (double) correct / n;
+        return (double) wrong / n;
     }
 
 }

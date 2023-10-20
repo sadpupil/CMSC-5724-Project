@@ -11,7 +11,9 @@ public class DataReader {
 
     String filePath;
 
-    public DataReader(String filePath) {
+    public DataReader() {}
+
+    public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
 

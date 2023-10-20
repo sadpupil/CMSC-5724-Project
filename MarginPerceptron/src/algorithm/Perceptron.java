@@ -1,7 +1,7 @@
 package algorithm;
 
 import entity.DataInstance;
-import helper.VectorOp;
+import tools.VectorOp;
 
 import java.util.ArrayList;
 
