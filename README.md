@@ -4,7 +4,7 @@
 > And only uses the functions of standard library
 
 ## How to use the program
-+ Make sure that you has JDK 1.7 or above installed on your device.
++ Make sure that you have JDK 1.7 or above installed on your device.
 
 + Create a new Java project using: `git clone https://github.com/sadpupil/CMSC-5724-Project.git` in VScode (or other tools).
 
