@@ -1,7 +1,7 @@
 # CMSC-5724-Project
 > The project is based on Java SE 7, and only uses the functions from the standard library
 >
-> The project is developed using IntelliJ IDEA 2023
+> The project was developed using IntelliJ IDEA 2023
 
 ## How to use the program
 + Make sure that you have JDK 1.7 or above installed on your device.
