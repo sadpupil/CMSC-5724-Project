@@ -8,7 +8,7 @@ By using the equation: $$ D_{p} = \frac{|\vec{p} \cdot \vec{w}|}{|\vec{w}|} $$ ,
 
 With dataset 1 as input, the result of my program is shown as below:
 
-![1](\img\1.png)
+![1](img/1.png)
 
 The margin of classifier $$\vec{w}$$ is $$2.630504567982789$$. 
 
@@ -18,7 +18,7 @@ From the screen shot above, we can also see that the final round of margin Perce
 
 With dataset 2 as input, the result of my program is shown as below:
 
-![2](\img\2.png)
+![2](img/2.png)
 
 The margin of classifier $$\vec{w}$$ is $$6.007701533717606$$. 
 
@@ -28,7 +28,7 @@ From the screen shot above, we can also see that the final round of margin Perce
 
 With dataset 3 as input, the result of my program is shown as below:
 
-![3](\img\3.png)
+![3](img/3.png)
 
 The margin of classifier $$\vec{w}$$ is $$3.031740039940767$$.
 
