@@ -12,9 +12,9 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) throws IOException {
         String[] dataSetPath = {
-                "DataSets/DataSet1.txt",
-                "DataSets/DataSet2.txt",
-                "DataSets/DataSet3.txt"
+                "CMSC-5724-Project\\DataSets\\DataSet1.txt",
+                "CMSC-5724-Project\\DataSets\\DataSet1.txt",
+                "CMSC-5724-Project\\DataSets\\DataSet1.txt"
         };
         DataReader dataReader = new DataReader();
         Incremental incremental = new Incremental();
