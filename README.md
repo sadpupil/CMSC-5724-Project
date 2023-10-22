@@ -4,13 +4,11 @@
 > And only uses the functions of standard library
 
 ## How to use the program
-+ You should make sure that you has JDK 1.7 or above installed on your device.
++ Make sure that you has JDK 1.7 or above installed on your device.
 
-+ After a project folder is created, you can open it with the a Java development tool(like IDEA or VScode) 
++ Create a new Java project using: `git clone https://github.com/sadpupil/CMSC-5724-Project.git` in VScode (or other tools).
 
-  and run: `git clone https://github.com/sadpupil/CMSC-5724-Project.git` in the terminal.
-
-+ After the Java project is loaded, you can run the `main` method in `/CMSC-5724-Project/MarginPerceptron/src/main/Main.java`, and the results shall be printed in the terminal.
++ After the project is loaded, run `main` method in `/CMSC-5724-Project/MarginPerceptron/src/main/Main.java`, and the results shall be printed in the terminal.
 
 
 
